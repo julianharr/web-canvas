@@ -50,3 +50,10 @@ bgButton.addEventListener('click', () => {
     canvas.style.backgroundColor = 'black';
   }
 })
+
+// Reset canvas
+const resetButton = document.querySelector('#reset');
+
+resetButton.addEventListener('click', () => {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+});

@@ -29,3 +29,26 @@ html, body {
 #draw {
   background-color: black; 
 }
+
+.options {
+  display: flex;
+  justify-content: space-around;
+}
+
+#reset {
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 2px;
+  margin-bottom: 12px;
+  margin-left: 8px;
+  background-color: #d31966;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+  color: white;
+}
+
+#reset:active {
+  transform: translateX(-3%) translateY(-8%);
+  box-shadow: 4px 4px #440a0a
+} 
