@@ -40,3 +40,13 @@ canvas.addEventListener('mouseup', () => isDrawing = false);
 canvas.addEventListener('mouseout', () => isDrawing = false);
 
 
+// Change background on button press
+const bgButton = document.querySelector('#bg-change');
+
+bgButton.addEventListener('click', () => {
+  if (canvas.style.backgroundColor === 'black') {
+    canvas.style.backgroundColor = "white";
+  } else {
+    canvas.style.backgroundColor = 'black';
+  }
+})
